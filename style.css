@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --lightcyan: hsl(193, 38%, 86%);
+  --neongreen: hsl(150, 100%, 66%);
+  --grayishblue: hsl(215, 18%, 26%);
+  --darkgrayishblue: hsl(218, 19%, 17%);
+}
+
+body {
+  background-color: var(--darkgrayishblue);
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  height: auto;
+  min-height: 100vh;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+  background-color: var(--grayishblue);
+  width: 60%;
+  height: auto;
+  border-radius: 20px;
+  position: relative;
+}
+
+header {
+  margin: 30px auto;
+  color: var(--neongreen);
+}
+
+header h3 {
+  text-transform: uppercase;
+  font-size: 5pt;
+  letter-spacing: 2px;
+  font-weight: 50;
+}
+article {
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+#quote {
+  font-size: 26px;
+  color: var(--lightcyan);
+  font-weight: 800;
+  text-align: center;
+  padding: 0px 20px;
+  margin-bottom: 20px;
+}
+
+.divider {
+  margin-bottom: 30px;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+form {
+  width: 100%;
+}
+
+button {
+  background-color: var(--neongreen);
+  border-radius: 50%;
+  border: none;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  box-shadow: 0 0 0 0;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+button:hover {
+  box-shadow: 0px 0px 30px 5px var(--neongreen);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+  width: 90%;
+}
+.attribution a {
+  color: var(--neongreen);
+  text-decoration: none;
+  font-size: 8px;
+  font-weight: 100;
+}
+
+@media (max-width: 767px) {
+  main {
+    width: 90%;
+  }
+
+  .box {
+    width: 100%;
+  }
+}
